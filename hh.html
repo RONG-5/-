@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function myTextFunction() {
+            alert("我是一个提示框\n点击确定看日本特产");
+            window.location.href = "https://jable.tv";
+        }
+        window.onload = function() {
+            document.getElementById("githubIcon").onclick = function() {
+                window.open("https://github.com", "_blank");
+            }
+        }
+    </script>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
+    <!-- 修复：将可见图标移到body内 -->
+     <h1 class="text-4xl font-bold mb-6 flex items-center justify-center">常用网站官网</h1>
+         <div style="margin-bottom: 30px;">
+        <a href="https://github.com" target="_blank" class="bg-gray-800 hover:animate-pulse text-white font-bold py-5 px-5 rounded-full w-20 h-20 flex items-center justify-center">
+            <i class="fa fa-github" aria-hidden="true" style="font-size: 40px;"></i>
+        </a>
+    </div>
+
+    <main class="max-w-5xl mx-auto w-full">
+        <!-- 修复：网格容器完整包裹所有卡片 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- 移除多余的p标签，规范结构 -->
+            <div class="rounded overflow-hidden shadow-lg max-w-sm hover:shadow-xl transition-all transform hover:-translate-y-1 flex flex-col h-hull">
+                <div>
+                <img class="w-full h-48 object-cover" src="https://cdn.worldvectorlogo.com/logos/github-2.svg" alt="github图标">
+                </div>
+                <div class="px-8 py-2 flex-grow">
+                    <div class="font-bold text-xl mb-2">GitHub</div>
+                    <p class="text-gray-700 text-base">GitHub是一个面向开发者的社交平台，提供Git代码托管服务。</p>
+                </div>
+                <div class="px-8 py-2 mt-auto">
+                    <a href="https://github.com" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">访问GitHub</a>
+                </div>
+            </div>
+
+            <div class="rounded overflow-hidden shadow-lg max-w-sm hover:shadow-xl transition-all transform hover:-translate-y-1 flex flex-col h-full">
+                <div class="w-full h-48 overflow-hidden">
+                <img class="w-full h-full object-cover" src="https://bkimg.cdn.bcebos.com/pic/b7003af33a87e950352a1dcd7a604443fbf2b2111e43?x-bce-process=image/format,f_auto/quality,Q_70/resize,m_lfit,limit_1,w_536" alt="bing图标">
+                </div>
+                <div class="px-8 py-2 flex-grow">
+                    <div class="font-bold text-xl mb-2">Bing</div>
+                    <p class="text-gray-700 text-base">微软必应（英文名：Microsoft Bing），原名必应（Bing），是微软公司于2009年5月28日推出，用以取代Live Search的全新搜索引擎服务。</p>
+                </div>
+                <div class="px-8 py-2 mt-auto">
+                    <a href="https://bing.com" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">访问必应Bing</a>
+                </div>
+            </div>
+
+            <div class="rounded overflow-hidden shadow-lg max-w-sm hover:shadow-xl transition-all transform hover:-translate-y-1 flex flex-col h-full">
+                <div class="w-full h-48 overflow-hidden">
+                   <img class="w-full h-full object-cover" src="https://bkimg.cdn.bcebos.com/pic/8644ebf81a4c510fd9f95314d00e322dd42a28340f3f?x-bce-process=image/format,f_auto/quality,Q_70/resize,m_lfit,limit_1,w_536" alt="chrome图标"></div>
+                <div class="px-8 py-2 flex-grow">
+                    <div class="font-bold text-xl mb-2">Chrome</div>
+                    <p class="text-gray-700 text-base">Google Chrome是由谷歌公司开发的网页浏览器。该浏览器基于其他开源软件开发。</p>
+                </div>
+                <div class="px-8 py-2 mt-auto">
+                    <a href="https://google.com" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">访问Chrome</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
